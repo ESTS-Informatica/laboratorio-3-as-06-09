@@ -113,6 +113,7 @@ public class Transport {
      * 
      * @return o preço final com a inclusão dos honorários
      */
+
     public double getPriceWithFees() {     
         return this.price * (1.0 + (this.fees * 0.01));
     }
