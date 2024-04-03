@@ -14,9 +14,9 @@ public class ShippingCompany extends Transport
     /**
      * Constructor for objects of class ShippingCompany
      */
-    public ShippingCompany()
+    public ShippingCompany(String name)
     {
-        
+        this.name = name;
     }
 
     
