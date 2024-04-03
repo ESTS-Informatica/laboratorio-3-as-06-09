@@ -17,6 +17,7 @@ public class ShippingCompany extends Transport
     public ShippingCompany(String name)
     {
         this.name = name;
+        inService = new ArrayList<Transport>();
     }
     
     
@@ -30,11 +31,13 @@ public class ShippingCompany extends Transport
      
         return sb.toString();
         */
+       final StringBuilder sb = new StringBuilder();
        String results = "\n";
         for(Transport t : inService) {
-            results += t.toString(); 
+            //results += t.toString(); 
+            sb.append(String.format("\n%15s: %s\n", "Matrícula", t.toString()));
         }
-        return results;
+        return sb.toString();
     }
     
 
